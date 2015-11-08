@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Boxes</title>
+    <link rel="stylesheet" href="colorBoxStyle.css"/>
+
+  <script>
+  function randomColor (boxElement)
+  {
+  	colorHexa = '#'+Math.floor(Math.random()*16777215).toString(16);
+  	boxElement.style.backgroundColor =colorHexa;
+  }
+
+    function loadColor () {
+	  	var boxElements = document.getElementsByClassName ('box');
+	  	for (i=0; i<boxElements.length; i++) {
+		  	colorHexa = '#'+Math.floor(Math.random()*16777215).toString(16);
+		  	boxElements[i].style.backgroundColor =colorHexa;
+		  	}
+		}
+
+  </script>
+</head>
+
+<body onload="loadColor();">
+
+    <div id ='container'>
+    <div id='heading'> <h1 class ='heading'>Color Boxes</h1> </div>
+    <hr>
+     <div id='allboxes'> 
+     <table class ='box-table'>
+     <tr class='box'>
+      		<td class ='box' onmouseover="randomColor(this)">  </td> 
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td> 
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td> 
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+     </tr>
+      <tr class='box'>
+      		<td class ='box' onmouseover="randomColor(this)"> </td>
+      		<td class ='box' onmouseover="randomColor(this)"> </td>     		
+      		<td class ='box' onmouseover="randomColor(this)">  </td> 
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td> 
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      	</tr>    
+      <tr class='box'>
+      		<td class ='box' onmouseover="randomColor(this)"> </td>
+      		<td class ='box' onmouseover="randomColor(this)"> </td>     		
+      		<td class ='box' onmouseover="randomColor(this)">  </td> 
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td> 
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      	</tr> 
+
+      	<tr class='box'>
+      		<td class ='box' onmouseover="randomColor(this)"> </td>
+      		<td class ='box' onmouseover="randomColor(this)"> </td>     		
+      		<td class ='box' onmouseover="randomColor(this)">  </td> 
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td> 
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      		<td class ='box' onmouseover="randomColor(this)">  </td>
+      	</tr> 
+     </table>
+     </div>
+    </div>
+</body>
+
+</html>

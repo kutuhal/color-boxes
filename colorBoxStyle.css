@@ -1,0 +1,53 @@
+#container {
+	margin-left: 10%;
+	margin-right: 10%;
+	min-width: 50%;
+	min-height: 400px;
+	border: 0px solid;
+	border-radius: 5px;
+
+}
+
+#heading {
+	color: red;
+	border: 1px solid;
+	border-bottom: 0px solid;
+	padding-bottom: 3px;
+	background: cyan;
+}
+#allboxes {
+	border: 1px solid;
+	border-top-width: 1px;
+		padding-left: 9px
+}
+#boxes {
+	height: 60%;
+}
+
+.heading {
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 1px 1px;
+	margin-bottom: 5px;
+}
+
+hr {
+	margin: 0px 0px;
+}
+.box-table {
+	margin: 10px 10px;
+
+}
+.box {
+	border: 0px solid;
+	width: 120px;
+	height: 120px;
+	padding: 0px 0px;
+	border-spacing: 0px 0px;
+	border-spacing: 0px;
+		background: cyan;
+}
+
+.box-table {
+	border-spacing: 0px;
+}
